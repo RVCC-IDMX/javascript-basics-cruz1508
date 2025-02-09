@@ -186,7 +186,10 @@ test('thisMonth', () => {
        'Hi, my name is John Smith and I was born in 2001'
 */
 // * Add your code BELOW here
-
+let year = 2001;
+let firstName = 'John';
+let lastName = 'Smith';
+let message = `Hi, my name is ${firstName} ${lastName} and I was born in ${year}`;
 // * Don't mess with the test code below here!
 test('creating a message', () => {
   expect(typeof message).toBe('string');
@@ -202,7 +205,9 @@ test('creating a message', () => {
      - Hint: Use the expression ${price + tax} inside the template literal.
 */
 // * Add your code BELOW here
-
+let tax = 8.25;
+let price = 100;
+let total = `Your total including tax is $${price + tax}`;
 // * Don't mess with the test code below here!
 test('creating a total', () => {
   expect(typeof total).toBe('string');
@@ -217,7 +222,9 @@ test('creating a total', () => {
        '<h1>JavaScript</h1><h2>HTML</h2><p>This is a paragraph</p>'
 */
 // * Add your code BELOW here
-
+let heading1 = 'JavaScript';
+let heading2 = 'HTML';
+let html = `<h1>${heading1}</h1><h2>${heading2}</h2><p>This is a paragraph</p>`;
 // * Don't mess with the test code below here!
 test('html', () => {
   expect(typeof html).toBe('string');

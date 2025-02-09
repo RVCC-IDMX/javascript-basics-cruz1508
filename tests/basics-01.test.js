@@ -162,7 +162,9 @@ test('sillyString', () => {
    (Make sure to use let for variables and const for constants.)
 */
 // * Add your code BELOW here
-
+let year = 2022;
+let firstName = 'John';
+const taxRate = 0.2;
 // * Don't mess with the test code below here!
 test('year', () => {
   expect(year).toBe(2022);
