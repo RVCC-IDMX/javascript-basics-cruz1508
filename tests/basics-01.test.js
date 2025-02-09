@@ -28,10 +28,14 @@
 // * Add your code BELOW here
 
 // * Don't mess with the test code below here!
+
+let myName;
 test('myName', () => {
   expect(myName).toBeUndefined();
   expect(typeof myName).toBe('undefined');
 });
+
+
 
 /* ==============================
    SKILL 2: Assign a value to a variable 🍎
@@ -46,6 +50,7 @@ test('myName', () => {
 // * Add your code BELOW here
 
 // * Don't mess with the test code below here!
+let age = 22;
 test('age', () => {
   expect(age).toBe(22);
   expect(typeof age).toBe('number');
@@ -62,12 +67,11 @@ test('age', () => {
    TODO: Use the const keyword to create a constant called daysInWeek and assign it the number literal 7.
 */
 // * Add your code BELOW here
-
+const daysInWeek = 7;
 // * Don't mess with the test code below here!
 test('daysInWeek', () => {
   expect(() => {
     // Prove immutability by attempting to reassign
-
     daysInWeek = '🙉';
   }).toThrow();
   expect(typeof daysInWeek).toBe('number');
@@ -89,6 +93,8 @@ test('daysInWeek', () => {
 // * Add your code BELOW here
 
 // * Don't mess with the test code below here!
+let myWorkDays;
+myWorkDays = daysInWeek;
 test('myWorkDays', () => {
   expect(typeof myWorkDays).toBe('number');
   expect(myWorkDays).toBe(daysInWeek);
@@ -115,6 +121,9 @@ test('myWorkDays', () => {
 // * Add your code BELOW here
 
 // * Don't mess with the test code below here!
+let oops;
+let sillyMath;
+sillyMath = oops * 2;
 test('sillyMath', () => {
   expect(oops).toBeUndefined();
   expect(typeof sillyMath).toBe('number');
@@ -135,6 +144,8 @@ test('sillyMath', () => {
 // * Add your code BELOW here
 
 // * Don't mess with the test code below here!
+let sillyString;
+sillyString = 'Hello, ' + oops;
 test('sillyString', () => {
   expect(oops).toBeUndefined();
   expect(typeof sillyString).toBe('string');
